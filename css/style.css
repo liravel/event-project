@@ -93,8 +93,19 @@ a {
 /*Program*/
 #program {
   display: none;
+  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
+}
+#pr-info {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 4;
+}
+#add-info {
+  display: flex;
+  flex-grow: 2;
+  background-color: white;
 }
 /*Tickets */
 #tickets {
