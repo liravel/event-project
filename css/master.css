@@ -47,7 +47,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  z-index: 1;
+  z-index: 0;
 }
 
 
@@ -106,9 +106,31 @@ header > * {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  z-index: 0;
+  z-index: 1;
 }
+#program>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#program>h3 {
 
+}
+#perc>img {
+  width: 25vw;
+  height: 25vw;
+  border: 1px solid black;
+}
+#nrmn>img {
+  width: 25vw;
+  height: 25vw;
+  border: 1px solid black;
+}
+#wc>img {
+  width: 25vw;
+  height: 25vw;
+  border: 1px solid black;
+}
 /*Tickets */
 #tickets{
   position: absolute;
