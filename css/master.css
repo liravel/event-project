@@ -1,4 +1,4 @@
-/**/
+/*Body*/
 body {
   background-color: #111111;
   font-family: 'Montserrat', sans-serif;
@@ -6,26 +6,27 @@ body {
   color: white;
   margin: 0;
   padding: 0;
-  border: 1px solid white;
 }
 
 a {
     text-decoration: none;
     color: inherit;
 }
+/*Menu*/
 #menu {
-  box-sizing: border-box;
   outline: 1px solid white;
   position: fixed;
   background-color: black;
   width: 100vw;
   height: 5vh;
   font-size: 1em;
+  /**/
   display: flex;
   justify-content: space-around;
   align-content: center;
   align-items: center;
   font-weight: bold;
+  /**/
   z-index: 2;
 }
 
@@ -34,59 +35,50 @@ a {
   border-left: 1px solid white;
   padding: 0 3vw;
 }
-
-header {
+/*Main*/
+#home, #about, #program, #tickets, #contact {
   position: absolute;
-  outline: : 1px solid white;
   width: 100%;
-  height: 100vh;
-  /*background-image: url(https://media.giphy.com/media/xThuW9o59UUCAZqCCQ/giphy.gif);*/
+  height: 95vh;
+  padding-top: 5vh;
   background-color: #111111;
-  background-size: cover;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   z-index: 0;
 }
 
+/*Home*/
+#home{
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1;
+}
 
-/**/
-header>h1 {
+#home > * {
   font-size: 4em;
-  font-weight: bold;
-}
-header> h2 {
-  font-size: 4em;
-  font-weight: bolder;
-  align-self: flex-end;
-}
-header>h3 {
-  font-size: 2em;
-  font-weight: lighter;
-}
-header > * {
   background-color: hsla(0, 0%, 7%, 0.72);
-  padding: 0 10vw;
   padding: 0 5vw;
   margin: 0 5vw;
+}
+
+#home> h2 {
+  align-self: flex-end;
+}
+
+#home>h3 {
+  font-size: 2em;
+  font-weight: lighter;
 }
 
 /*About*/
 
 #about {
-  position: absolute;
-  border-bottom: 1px solid gray;
-  width: 100%;
-  height: 100vh;
   background-color: white;
   color: #111111;
-  display: flex;
   justify-content: space-around;
   align-items: center;
-  z-index: 0;
-
 }
+
 #about>* {
   padding: 0 2vw;
 }
@@ -97,72 +89,21 @@ header > * {
 
 /*Program*/
 #program {
-  position: absolute;
-  border-bottom: 1px solid gray;
-  width: 100%;
-  height: 100vh;
-  background-color: white;
-  color: #111111;
-  display: flex;
   justify-content: space-around;
   align-items: center;
-  z-index: 1;
-}
-#program>div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#program>h3 {
-
-}
-#perc>img {
-  width: 25vw;
-  height: 25vw;
-  border: 1px solid black;
-}
-#nrmn>img {
-  width: 25vw;
-  height: 25vw;
-  border: 1px solid black;
-}
-#wc>img {
-  width: 25vw;
-  height: 25vw;
-  border: 1px solid black;
 }
 /*Tickets */
-#tickets{
-  position: absolute;
-  border-bottom: 1px solid gray;
-  width: 100%;
-  height: 100vh;
-  background-color: white;
-  color: #111111;
-  display: flex;
+#tickets {
   justify-content: space-around;
   align-items: center;
-  z-index: 0;
 }
 
 /*contact */
 #contact{
-  position: absolute;
-  border-bottom: 1px solid gray;
-  width: 100%;
-  height: 100vh;
-  background-color: white;
-  color: #111111;
-  display: flex;
   justify-content: space-around;
   align-items: center;
-  z-index: 0;
 }
-
-a[href*="home"]:hover {
-  color: gray;
-}
-a[href*="home"]:active {
-  color: var(--main-bg-color);
-
-}
+/*
+1. стиль ссылок
+2. добавить контент в блоки
+*/
