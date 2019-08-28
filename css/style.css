@@ -73,6 +73,8 @@ a {
 /*About*/
 
 #about {
+  display: none;
+  height: 195vh;
   background-color: white;
   color: #111111;
   justify-content: space-around;
@@ -89,17 +91,20 @@ a {
 
 /*Program*/
 #program {
+  display: none;
   justify-content: space-around;
   align-items: center;
 }
 /*Tickets */
 #tickets {
+  display: none;
   justify-content: space-around;
   align-items: center;
 }
 
 /*contact */
 #contact{
+  display: none;
   justify-content: space-around;
   align-items: center;
 }
