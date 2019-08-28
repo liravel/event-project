@@ -7,7 +7,3 @@ var changeZIndex = function(id, current) {
   selectedNode.style.zIndex = "1";
   selectedNode.classList.add("top");
 }
-
-var sliderScroll = function() {
-  var slider = document.getElementById("myRange"); //slider.value
-}

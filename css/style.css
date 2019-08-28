@@ -141,8 +141,8 @@ a {
 }
 
 .slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
+  width: 8vh;
+  height: 4vh;
   background: black;
   cursor: pointer;
 }
