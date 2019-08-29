@@ -153,6 +153,18 @@ a {
   color: gray;
   transition: color 1s, text-decoration 2s;
 }
+#perc {
+  display: block;
+  z-index: 1;
+}
+#nrmn {
+  display:  none;
+    z-index: 0;
+}
+#wc {
+  display: none;
+    z-index: 0;
+}
 /*Tickets */
 #tickets {
   display: none;

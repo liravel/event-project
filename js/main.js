@@ -9,3 +9,17 @@ var changeZIndex = function(id, current) {
   selectedNode.style.display = "flex";
   selectedNode.classList.add("top");
 }
+
+
+var changeArtist = function(id, current) {
+  var currentArtist = document.getElementById(current[0].id);
+  var selected = document.getElementById(id);
+  currentArtist.style.display = "none";
+  currentArtist.style.zIndex = "-1";
+  currentArtist.classList.remove("currentArtist");
+  selected.style.display = "block";
+  selected.style.zIndex = "2";
+  selected.classList.add("currentArtist");
+  console.log(id);
+
+}
