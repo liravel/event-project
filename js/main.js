@@ -23,3 +23,35 @@ var changeArtist = function(id, current) {
   console.log(id);
 
 }
+
+var next = function(current) {
+  var currentId = [...current].slice(0)[0].id;
+  var currentNode = document.getElementById(currentId);
+  var selectedNode =  document.getElementById(currentId).nextSibling.nextSibling; //previousSibling
+  if(currentId !=="contact") {
+    currentNode.classList.remove("top");
+    currentNode.style.zIndex = "0";
+    currentNode.style.display = "none"
+    selectedNode.style.zIndex = "1";
+    selectedNode.style.display = "flex";
+    selectedNode.classList.add("top");
+    console.log(selectedNode);
+  }
+
+}
+
+var prev = function(current) {
+  var currentId = [...current].slice(0)[0].id;
+  var currentNode = document.getElementById(currentId);
+  var selectedNode =  document.getElementById(currentId).previousSibling.previousSibling;
+  if(currentId !== "home") {
+    currentNode.classList.remove("top");
+    currentNode.style.zIndex = "0";
+    currentNode.style.display = "none"
+    selectedNode.style.zIndex = "1";
+    selectedNode.style.display = "flex";
+    selectedNode.classList.add("top");
+  }
+ //previousSibling
+
+}
