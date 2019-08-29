@@ -27,7 +27,7 @@ var changeArtist = function(id, current) {
 var next = function(current) {
   var currentId = [...current].slice(0)[0].id;
   var currentNode = document.getElementById(currentId);
-  var selectedNode =  document.getElementById(currentId).nextSibling.nextSibling; //previousSibling
+  var selectedNode =  document.getElementById(currentId).nextSibling.nextSibling; 
   if(currentId !=="contact") {
     currentNode.classList.remove("top");
     currentNode.style.zIndex = "0";
@@ -60,12 +60,6 @@ var prev = function(current) {
 
 window.addEventListener("keydown", function(e) {
   e = e || this.window.event;
-  if(e.key === "ArrowLeft") {
-    prev(document.getElementsByClassName('top'));
-  }
-  if(e.key === "ArrowRight") {
-    next(document.getElementsByClassName('top'))
-  }
   switch(e.key) {
     case "ArrowLeft":
         prev(document.getElementsByClassName('top'));
