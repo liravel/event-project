@@ -162,7 +162,7 @@ a {
 
 /*contact */
 #contact{
-  display: none;
+  display: flex;
   justify-content: space-around;
   align-items: center;
 }
@@ -213,12 +213,6 @@ a {
 }
 
 /*form*/
-#contact-form {
-  height: auto;
-  width: 40vw;
-  background-color: black;
-}
-
 
 button,
 input,
@@ -257,86 +251,48 @@ textarea {
 [placeholder]:focus:-ms-input-placeholder { color: transparent; }
 
 form {
-  width: 40vw;
-  margin: 5vh auto;
+  width: 60vw;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 input[type="text"] {
-  display: block;
-  width: 400px;
-  margin: 0 0 20px;
-  padding: 8px 12px 10px 12px;
-  border: 1px solid rgba(0,0,0,1);
-  background: rgba(0,0,0,.2);
+  width: 50vw;
+  border: 1px solid white;
+  background: black;
+  color: white;
+  padding: 1vh 1vw;
+  margin: 3vh 0 3vh 3vw;
 }
 
 textarea {
+    color: white;
+  width: 50vw;
+  height: 20vh;
+  border: 1px solid gray;
+  background:black ;
+  padding: 1vh 1vw;
+  margin: 3vh 0 0 3vw;
+}
+
+
+#submit {
   display: block;
-  width: 400px;
-  height: 150px;
-  margin: 0 0 20px;
-  padding: 8px 12px 10px 12px;
-  border: 1px solid rgba(0,0,0,.5);
-  background: rgba(0,0,0,.25);
+  padding: 1vh 1vw;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  margin: 3vw;
 }
-
-.radio {
-  position: relative;
-  display: inline-block;
-  margin: 0 20px 20px 0;
-}
-
-.radio input[type="radio"] {
-  vertical-align: middle;
-  opacity: 0;
-}
-
-.radio label {
-  vertical-align: middle;
+#submit:hover {
+  color: gray;
   cursor: pointer;
 }
-
-.radio input[type="radio"] + label:before {
-  content: '';
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: -3px 5px 0 -15px;
-  vertical-align: middle;
-  font-size: 14px;
-  font-family: fontawesome;
-  line-height: 19px;
-  text-align: center;
-  border: 1px solid rgba(0,0,0,.5);
-  background: rgba(0,0,0,.25);
-}
-
-.radio input[type="radio"] + label:before {
-  border-radius: 50%;
-}
-
-.radio input[type="radio"]:hover + label:before {
-  content: '\f111';
-  font-size: 9px;
-  color: rgba(255,255,255,.4);
-}
-
-.radio input[type="radio"]:checked + label:before {
-  content: '\f111';
-  font-size: 9px;
-  color: rgba(255,255,255,.8);
-}
-
-.radio .sex {
-  font: 20px fontawesome;
-}
-
-input[type="submit"] {
-  display: block;
-  width: 150px;
-  margin: 0 0 20px;
-  padding: 8px 0 10px 0;
-  text-align: center;
-  border: 1px solid rgba(0,0,0,.5);
-  background: rgba(0,0,0,.25);
+#submit:active {
+  color: white;
+  cursor: pointer;
 }
