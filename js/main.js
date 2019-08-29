@@ -18,8 +18,6 @@ var changeArtist = function(id, current) {
   currentArtist.classList.remove("currentArtist");
   selected.style.display = "block";
   selected.classList.add("currentArtist");
-  console.log(id);
-
 }
 
 var next = function(current) {
