@@ -41,7 +41,7 @@ a {
   align-content: center;
   align-items: center;
   font-weight: bold;
-  z-index: 3;
+  z-index: 4;
 }
 
 #menu > * {
@@ -206,7 +206,7 @@ a {
   color: white;
   box-shadow: 0 0 3vw 3vw black;
   opacity: 0.1;
-  z-index: 2;
+  z-index: 4;
 
 }
 .arrow-bg>* {
@@ -222,6 +222,28 @@ a {
 .right-bg {
   right: 0vw;
 }
+
+.arrow {
+  position: fixed;
+  opacity: 0.5;
+  z-index: 3;
+  height: 3vh;
+  width: 3vh;
+  border-top: 1vh solid rgba(128, 128, 128, 0.76);
+  border-right: 1vh solid rgba(128, 128, 128, 0.76);
+  color: white;
+  bottom: 5vh;
+}
+.left {
+  transform: rotate(45deg);
+  right: 5vw;
+}
+
+.right {
+  transform: rotate(225deg);
+  left: 5vw;
+}
+
 
 /*form*/
 

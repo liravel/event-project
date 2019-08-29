@@ -52,7 +52,6 @@ var prev = function(current) {
     selectedNode.style.display = "flex";
     selectedNode.classList.add("top");
   }
- //previousSibling
 
 }
 
