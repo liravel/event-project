@@ -15,6 +15,7 @@ a {
 /*Menu*/
 #menu {
   outline: 1px solid white;
+  opacity: 0.7;
   position: fixed;
   background-color: black;
   width: 100vw;
@@ -29,7 +30,10 @@ a {
   /**/
   z-index: 3;
 }
-
+#menu > * :hover {
+  opacity: 1;
+  font-size: 1.1em;
+}
 #menu > * {
   border-right: 1px solid white;
   border-left: 1px solid white;
@@ -99,8 +103,8 @@ a {
 
 #about>h1 {
   color: white;
+  opacity: 0.8;
   text-align: right;
-  text-decoration: line-through;
 }
 
 #about>p {
