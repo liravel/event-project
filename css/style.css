@@ -224,6 +224,7 @@ a {
 }
 
 .arrow {
+  align-items: center;
   position: fixed;
   opacity: 0.5;
   z-index: 3;
@@ -236,12 +237,12 @@ a {
 }
 .left {
   transform: rotate(45deg);
-  right: 5vw;
+  right: 3vw;
 }
 
 .right {
   transform: rotate(225deg);
-  left: 5vw;
+  left: 3vw;
 }
 
 
