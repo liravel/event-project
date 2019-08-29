@@ -213,6 +213,13 @@ a {
 }
 
 /*form*/
+#contact-form {
+  height: auto;
+  width: 40vw;
+  background-color: black;
+}
+
+
 button,
 input,
 select,
@@ -222,7 +229,7 @@ textarea {
   vertical-align: baseline;
   border: 0;
   outline: 0;
-  color: #fff;
+  color: black;
 }
 
 button::-moz-focus-inner,
@@ -250,8 +257,8 @@ textarea {
 [placeholder]:focus:-ms-input-placeholder { color: transparent; }
 
 form {
-  width: 400px;
-  margin: 50px auto;
+  width: 40vw;
+  margin: 5vh auto;
 }
 
 input[type="text"] {
@@ -259,8 +266,8 @@ input[type="text"] {
   width: 400px;
   margin: 0 0 20px;
   padding: 8px 12px 10px 12px;
-  border: 1px solid rgba(0,0,0,.5);
-  background: rgba(0,0,0,.25);
+  border: 1px solid rgba(0,0,0,1);
+  background: rgba(0,0,0,.2);
 }
 
 textarea {
