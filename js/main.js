@@ -67,15 +67,19 @@ window.addEventListener("keydown", function(e) {
   if(e.key === "ArrowRight") {
     next(document.getElementsByClassName('top'))
   }
-})
-
-function throttle(fn, wait) {
-  var time = Date.now();
-  return function() {
-    if ((time + wait - Date.now()) < 0) {
-      fn();
-      time = Date.now();
-    }
+  switch(e.key) {
+    case "ArrowLeft":
+        prev(document.getElementsByClassName('top'));
+        break;
+    case "ArrowLeft":
+        prev(document.getElementsByClassName('top'));
+        break;
+    case "ArrowUp":
+        next(document.getElementsByClassName('top'));
+         break;
+    case "ArrowDown":
+        prev(document.getElementsByClassName('top'));
+        break;      
   }
-}
+})
 

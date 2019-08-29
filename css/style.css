@@ -168,7 +168,7 @@ a {
 }
 #wc {
   display: none;
-    z-index: 0;
+  z-index: 0;
 }
 /*Tickets */
 #tickets {
@@ -191,20 +191,33 @@ a {
   height: 100vh;
   width: 5vw;
   background-color: black;
+  color: white;
   box-shadow: 0 0 3vw 3vw black;
   opacity: 0.1;
   z-index: 2;
 
 }
+.arrow-bg>* {
+  font-size: 3em;
+  position: fixed;
+  bottom: 5vh;
+}
 .arrow-bg:hover {
   opacity: 0.3;
   cursor: pointer;
 }
-.left-bg {
 
-}
 .right-bg {
   right: 0vw;
+}
+
+#caption {
+  position: fixed;
+  margin: 3vh 3vw;
+  bottom: 5vh;
+  opacity: 0.7;
+  font-size: small;
+  z-index: 1;
 }
 .arrows {
   border-bottom: 1vh solid;
