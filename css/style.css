@@ -286,7 +286,7 @@ form {
   align-content: center;
 }
 
-input[type="text"] {
+input[type="text"], input[type="button"] {
   width: 50vw;
   border: 1px solid grey;
   background: black;
@@ -296,7 +296,7 @@ input[type="text"] {
 }
 
 textarea {
-    color: white;
+  color: white;
   width: 50vw;
   height: 20vh;
   border: 1px solid grey;
@@ -305,19 +305,16 @@ textarea {
   margin: 3vh 0 0 3vw;
 }
 
-#submit {
-  display: block;
-  padding: 1vh 1vw;
-  background-color: black;
-  border: 1px solid grey;
-  color: white;
-  margin: 3vw;
+#submit{
+  color: rgba(255,255,255,.8);
+  width: auto;
+  text-align: left;
 }
+
 #submit:hover {
-  cursor: pointer;
+  color: grey;
 }
+
 #submit:active {
-  border: 1px solid white;
   color: white;
-  cursor: pointer;
 }
