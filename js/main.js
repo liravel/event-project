@@ -55,3 +55,16 @@ var prev = function(current) {
  //previousSibling
 
 }
+
+
+
+
+window.addEventListener("keydown", function(e) {
+  e = e || this.window.event;
+  if(e.key === "ArrowLeft") {
+    prev(document.getElementsByClassName('top'));
+  }
+  if(e.key === "ArrowRight") {
+    next(document.getElementsByClassName('top'))
+  }
+})
