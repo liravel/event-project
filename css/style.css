@@ -87,6 +87,7 @@ a {
 
 }
 
+<<<<<<< HEAD
 #about>* {
   font-size: large;
   width: 60vw;
@@ -107,6 +108,28 @@ a {
 
 }
 
+=======
+#about>article {
+  width: 80vw;
+  text-align: justify;
+}
+
+#about:nth-child(1) {
+
+}
+
+#about:nth-child(2) {
+  align-self: flex-end;
+}
+
+#about:nth-child(3) {
+  
+}
+
+
+
+
+>>>>>>> 1d3308a32f4893d7beea6f431bd26c8fc7c39183
 
 /*Program*/
 #program {
